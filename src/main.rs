@@ -38,15 +38,3 @@ async fn main() -> std::io::Result<()> {
     .run()
     .await
 }
-
-
-//Cargo.toml
-[package]
-name = "restapi-server"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-actix-web = "4.0"
-serde = { version = "1.0", features = ["derive"]}
-serde_json = "1.0"
