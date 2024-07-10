@@ -1,5 +1,8 @@
+#[path = "db/db.rs"] mod db;
+
 use actix_web::{web, App, HttpResponse, HttpServer, Responder};
 use serde::{Deserialize, Serialize};
+
 
 //#[]은 속성 정의
 #[derive(Serialize, Deserialize)]
